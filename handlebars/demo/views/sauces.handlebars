@@ -1,0 +1,10 @@
+    <section>
+        <h2>There are {{sauceList.length}} sauces</h2>
+        {{#each sauceList}}
+        <article>
+            <h2>{{name}}</h2>
+            <img src="{{image}}"/>
+            <a class="btn" href="/sauces/{{id}}">View Sauce</a>
+        </article>
+        {{/each}}
+    </section>
